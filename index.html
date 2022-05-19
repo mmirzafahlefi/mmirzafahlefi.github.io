@@ -214,20 +214,20 @@
                     </div>
                 </div>
 
-                <form action="mailto:mirzafahlefi0910@gmail.com" method="POST" enctype="multipart/form-data" class="contact-form">
+                <form id="pesan" class="contact-form">
                     <div class="contact-inputs">
-                        <input type="text" placeholder="Name" class="contact-input">
-                        <input type="email" placeholder="Email" class="contact-input">
+                        <input type="text" placeholder="Name" class="contact-input" id="name">
+<!--                         <input type="email" placeholder="Email" class="contact-input"> -->
                     </div>
 
-                    <div class="contact-inputs">
+<!--                     <div class="contact-inputs">
                         <input type="text" placeholder="Project" class="contact-input">
                         <input type="number" placeholder="Number" class="contact-input">
-                    </div>
+                    </div> -->
 
-                    <textarea name="" id="" cols="0" rows="7" class="contact-input"></textarea>
+                    <textarea name="" id="isiPesan" cols="0" rows="7" class="contact-input"></textarea>
 
-                    <input type="submit" value="Send" class="btn contact-btn">
+                    <input type="submit" value="Send" class="btn contact-btn" id="kirim">
                 </form>
             </div>
         </section>
@@ -265,6 +265,14 @@
         e.preventDefault();
         const href = $(this).attr("href");
         $("html, body").animate({ scrollTop: $(href).offset().top }, 800);
+        });
+        $(document).ready(function() {
+            $('#kirim').click(function() {
+                $('#pesan').attr('action',
+                               'mailto:mirzafahlefi0910@gmail.com.com?subject=' +
+                               $('#name').val() + '&body=' + $('#isiPesan').val());
+                $('#pesan').submit();
+            });
         });
     </script>
 </body>
