@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/logo mf2.png" type="image/x-icon">
+
+    <title>mmirzafahlefi</title>
+</head>
+
+<body>
+    <!--===== SCROLL TOP =====-->
+    <a href="#home" id="scroll-top" class="scrolltop show-scroll">
+        <i class='bx bx-chevron-up scrolltop-icon'></i>
+    </a>
+
+
+    <!--===== HEADER =====-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#home" class="nav-logo">mmirzafahlefi</a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#service" class="nav-link">Service</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle" onclick="showMenu()">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home section" id="home">
+            <div class="home-container bd-container bd-grid">
+                <div class="home-data">
+                    <span class="home-title">Hello, My name is</span>
+                    <h1 class="home-name">Muhammad Mirza Fahlefi</h1>
+                    <span class="home-profesi">Designer and Web Development</span>
+                    <a href="#portfolio" class="btn btn-light home-btn"><i class='bx bxs-folder-open'
+                            style="margin-right: 7px; font-size: 17px;"></i>Project</a>
+                </div>
+
+                <div class="social">
+                    <a href="https://www.instagram.com/mmirzafahlefi/" class="social-icon"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="" class="social-icon"><i class='bx bxl-twitter'></i></a>
+                    <a href="" class="social-icon"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+
+                <div class="image">
+                    <img src="assets/img/mirza.png" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <!--===== ABOUT =====-->
+        <section class="about section bd-container" id="about">
+            <span class="section-subtitle">My history</span>
+            <h2 class="section-title">About me</h2>
+
+            <div class="about-container bd-grid">
+                <div class="about-data bd-grid">
+                    <p class="about-deskripsi"><span>Hello, I am <br></span>Muhammad Mirza Fahlefi, you can call me Mirza. I am a web developer and I love designing. I want to animate my designs so they can interact. I use the media website I think it's cheap and can be reached by many people. I am now 17 years old, I attend Letris Indonesia 2 vocational high school, thank you....
+                    </p>
+                </div>
+                <img src="assets/img/logo mf3.png" alt="" class="about-img">
+            </div>
+        </section>
+
+
+        <!--===== SERVICES =====-->
+        <section class="service section bd-container" id="service">
+            <span class="section-subtitle">what i offer</span>
+            <h2 class="section-title">Services</h2>
+
+            <div class="service-container bd-grid">
+                <div class="service-data">
+                    <i class='bx bx-palette service-icon'></i>
+                    <h3 class="service-title">designer</h3>
+                    <p class="service-deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quis?</p>
+                    <a href="" class="btn">Read more</a>
+                </div>
+
+                <div class="service-data">
+                    <i class='bx bx-laptop service-icon'></i>
+                    <h3 class="service-title">Web development</h3>
+                    <p class="service-deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quis?</p>
+                    <a href="" class="btn">Read more</a>
+                </div>
+
+                <div class="service-data">
+                    <i class='bx bx-pen service-icon'></i>
+                    <h3 class="service-title">Editor</h3>
+                    <p class="service-deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quis?</p>
+                    <a href="" class="btn">Read more</a>
+                </div>
+            </div>
+        </section>
+
+        <!--===== PORTFOLIO =====-->
+        <section class="portfolio section bd-container" id="portfolio">
+            <span class="section-subtitle">My recent works</span>
+            <h2 class="section-title">Portfolio</h2>
+
+            <div class="portfolio-nav">
+                <span class="portfolio-item active-portfolio" data-filter="all">All</span>
+                <span class="portfolio-item" data-filter=".web">Web</span>
+                <span class="portfolio-item" data-filter=".landing-page">Landing Page</span>
+                <span class="portfolio-item" data-filter=".design">Design</span>
+            </div>
+
+            <div class="portfolio-container bd-grid">
+                <div class="portfolio-content mix web">
+                    <a href=""><img src="assets/img/work1.jpg" alt="" class="portfolio-img"></a>
+                    <div class="portfolio-data">
+                        <span class="portfolio-subtitle">Web development</span>
+                        <a href=""><h2 class="portfolio-title">Lorem ipsum dolor sit amet consectetur.</h2></a>
+                        <a href="" class="btn btn-link">View Details</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-content mix web">
+                    <a href=""><img src="assets/img/work2.jpg" alt="" class="portfolio-img"></a>
+                    <div class="portfolio-data">
+                        <span class="portfolio-subtitle">Web development</span>
+                        <a href=""><h2 class="portfolio-title">Lorem ipsum dolor sit amet consectetur.</h2></a>
+                        <a href="" class="btn btn-link">View Details</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-content mix landing-page">
+                    <a href=""><img src="assets/img/work3.jpg" alt="" class="portfolio-img"></a>
+                    <div class="portfolio-data">
+                        <span class="portfolio-subtitle">Landing page</span>
+                        <a href=""><h2 class="portfolio-title">Lorem ipsum dolor sit amet consectetur.</h2></a>
+                        <a href="" class="btn btn-link">View Details</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-content mix landing-page">
+                    <a href=""><img src="assets/img/work4.jpg" alt="" class="portfolio-img"></a>
+                    <div class="portfolio-data">
+                        <span class="portfolio-subtitle">Landing page</span>
+                        <a href=""><h2 class="portfolio-title">Lorem ipsum dolor sit amet consectetur.</h2></a>
+                        <a href="" class="btn btn-link">View Details</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-content mix design">
+                    <a href=""><img src="assets/img/work5.jpg" alt="" class="portfolio-img"></a>
+                    <div class="portfolio-data">
+                        <span class="portfolio-subtitle">Design</span>
+                        <a href=""><h2 class="portfolio-title">Lorem ipsum dolor sit amet consectetur.</h2></a>
+                        <a href="" class="btn btn-link">View Details</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-content mix design">
+                    <a href=""><img src="assets/img/work6.jpg" alt="" class="portfolio-img"></a>
+                    <div class="portfolio-data">
+                        <span class="portfolio-subtitle">Design</span>
+                        <a href=""><h2 class="portfolio-title">Lorem ipsum dolor sit amet consectetur.</h2></a>
+                        <a href="" class="btn btn-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--===== CONTACTME =====-->
+        <section class="contact section bd-container" id="contact">
+            <span class="section-subtitle">For Projects</span>
+            <h2 class="section-title">Contact Me</h2>
+
+            <div class="contact-container bd-grid">
+                <div class="contact-content bd-grid">
+                    <div class="contact-box">
+                        <i class="bx bx-home contact-icon"></i>
+                        <h3 class="contact-title">location</h3>
+                        <span class="contact-deskripsi">Tangerang Selatan, Banten, Indonesia</span>
+                    </div>
+
+                    <div class="contact-box">
+                        <i class="bx bx-phone contact-icon"></i>
+                        <h3 class="contact-title">Phone</h3>
+                        <span class="contact-deskripsi">+6289513824844</span>
+                    </div>
+
+                    <div class="contact-box">
+                        <i class="bx bx-chat contact-icon"></i>
+                        <h3 class="contact-title">Chat</h3>
+                        <div>
+                            <a href="https://www.instagram.com/mmirzafahlefi/" class="contact-social"><i class="bx bxl-instagram-alt"></i></a>
+                            <a href="#" class="contact-social"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="contact-social"><i class="bx bxl-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact-form">
+                    <div class="contact-inputs">
+                        <input type="text" placeholder="Name" class="contact-input">
+                        <input type="email" placeholder="Email" class="contact-input">
+                    </div>
+
+                    <div class="contact-inputs">
+                        <input type="text" placeholder="Project" class="contact-input">
+                        <input type="number" placeholder="Number" class="contact-input">
+                    </div>
+
+                    <textarea name="" id="" cols="0" rows="7" class="contact-input"></textarea>
+
+                    <input type="submit" value="Send" class="btn contact-btn">
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <div class="footer-container bd-container">
+            <h1 class="footer-title">Muhammad Mirza Fahlefi</h1>
+            <p class="footer-deskripsi">FROM DESIGN TO CODE</p>
+
+            <div class="footer-social">
+                <a href="https://www.instagram.com/mmirzafahlefi/" class="footer-link"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="#" class="footer-link"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="footer-link"><i class="bx bxl-whatsapp"></i></a>
+            </div>
+            <p class="footer-copy">&#169; 2022 Mirf. All right reserved</p>
+        </div>
+    </footer>
+
+    <!-- ===== MIXITUP FILTER ===== -->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!-- ===== GSAP ===== -->
+    <script src="assets/js/gsap.min.js"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $("a").on("click", function (e) {
+        e.preventDefault();
+        const href = $(this).attr("href");
+        $("html, body").animate({ scrollTop: $(href).offset().top }, 800);
+        });
+    </script>
+</body>
+
+</html>
