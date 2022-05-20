@@ -214,18 +214,18 @@
                     </div>
                 </div>
 
-                <form id="pesan" class="contact-form">
+                <form class="contact-form">
                     <div class="contact-inputs">
-                        <input type="text" placeholder="Name" class="contact-input" id="name">
-<!--                         <input type="email" placeholder="Email" class="contact-input"> -->
+                        <input type="text" placeholder="Name" class="contact-input">
+                        <input type="email" placeholder="Email" class="contact-input">
                     </div>
 
-<!--                     <div class="contact-inputs">
+                    <div class="contact-inputs">
                         <input type="text" placeholder="Project" class="contact-input">
                         <input type="number" placeholder="Number" class="contact-input">
-                    </div> -->
+                    </div>
 
-                    <textarea name="" id="isiPesan" cols="0" rows="7" class="contact-input"></textarea>
+                    <textarea name="" cols="0" rows="7" class="contact-input"></textarea>
 
                     <input type="submit" value="Send" class="btn contact-btn" id="kirim">
                 </form>
@@ -257,6 +257,9 @@
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
+    
+    <!--   smtp   -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -266,14 +269,20 @@
         const href = $(this).attr("href");
         $("html, body").animate({ scrollTop: $(href).offset().top }, 800);
         });
-        $(document).ready(function() {
-            $('#kirim').click(function() {
-                $('#pesan').attr('action',
-                               'mailto:mirzafahlefi0910@gmail.com.com?subject=' +
-                               $('#name').val() + '&body=' + $('#isiPesan').val());
-                $('#pesan').submit();
-            });
-        });
+        
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "mirzafahlefi0910@gmail.com",
+                Password : "password",
+                To : 'them@website.com',
+                From : "you@isp.com",
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+              message => alert(message)
+            );
+        }
     </script>
 </body>
 
